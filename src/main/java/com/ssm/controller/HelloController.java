@@ -20,7 +20,7 @@ public class HelloController {
         String a="aaa";
         String b="bbb";
         String c="bbb";
-        String d="bbb";
+        String d="ddd";
         return "OK";
     }
 
