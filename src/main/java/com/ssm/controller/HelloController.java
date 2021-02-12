@@ -18,6 +18,9 @@ public class HelloController {
     public String testEX(@PathVariable("id") String id){
         usersService.doEX(id);
         String a="aaa";
+        String b="bbb";
+        String c="bbb";
+        String d="bbb";
         return "OK";
     }
 
