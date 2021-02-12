@@ -17,11 +17,7 @@ public class HelloController {
     @RequestMapping("/ex/{id}")
     public String testEX(@PathVariable("id") String id){
         usersService.doEX(id);
-        String msg="对helloController进行了一次修改";
-        String msg2="对helloController进行了一次修改";
-        String msg3="对helloController进行了一次修改";
-        String msg4="对helloController进行了一次修改";
-        String msg5="对helloController进行了一次修改";
+        String a="aaa";
         return "OK";
     }
 
@@ -29,11 +25,6 @@ public class HelloController {
     @RequestMapping("/hello")
     public String sayHello(HttpServletRequest request){
         List<Users> users = usersService.findAllUsers();
-        String msg="对helloController进行了一次修改";
-        String msg2="对helloController进行了一次修改";
-        String msg3="对helloController进行了一次修改";
-        String msg4="对helloController进行了一次修改";
-        String msg5="对helloController进行了一次修改";
         Users user = users.get(0);
         request.setAttribute("file",user);
         return "show";
